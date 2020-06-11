@@ -1,0 +1,99 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Swastham</title>
+<script type="text/javascript">
+function empty()
+{
+	if(document.getElementById('name').value=="")
+	{
+		alert("Please Enter Your Name.");
+		document.getElementById('name').focus();
+		return false;
+	}
+	if(document.getElementById('age').value=="")
+	{
+		alert("Please Enter Your Age.");
+		document.getElementById('age').focus();
+		return false;
+	}
+	if(document.getElementById('email').value=="")
+	{
+		alert("Please Enter Your Email Id.");
+		document.getElementById('email').focus();
+		return false;
+	}
+	if(document.getElementById('typed').value=="")
+	{
+		alert("Please Enter Your Type of Diabetes.");
+		document.getElementById('typed').focus();
+		return false;
+	}
+	if(document.getElementById('num').value=="")
+	{
+		alert("Please Enter Your Numbere of Years Since Diagnosis of Diabetes.");
+		document.getElementById('num').focus();
+		return false;
+	}
+	if(document.getElementById('lwd').value=="")
+	{
+		alert("Please Write About Living With Diabetes in India.");
+		document.getElementById('lwd').focus();
+		return false;
+	}
+	document.swas.submit();
+}
+var wordLen = 30; // Maximum word length
+	function checkWordLen(obj){
+	var len = obj.value.split(/[\s]+/);
+	if(len.length > wordLen){
+		alert("You've exceeded the "+wordLen+" word limit for the article!");
+		obj.oldValue = obj.value!=obj.oldValue?obj.value:obj.oldValue;
+		obj.value = obj.oldValue?obj.oldValue:"";
+		return false;
+	}
+	return true;
+	}
+	function limitWords(id) {
+    var maxWords=30;
+    var d=document.getElementById(id);
+    if ( d.value.split(' ').length > maxWords ) {
+        t=d.value.substring(0,d.value.lastIndexOf(' '));
+        d.value=t.substring(0,t.lastIndexOf(' ')+1);
+    }
+}
+</script>
+</head>
+
+<body>
+
+<div style="width:810px; height:1451px; width:810px; background-image:url(http://medulla.in/facebook/swastham/images/s2.png);  margin:0 auto;">
+
+<div style="background-image:url(http://medulla.in/facebook/swastham/images/s2text.png); position:absolute; top:738px; left:321px; width:247px; height:357px"> </div>
+
+<div style="position:absolute; top:739px; left:605px; width:350px ">
+<form action="" method="post"  name="swas" id="swas">
+ <input type="text" name="name" id="name" size="65" />
+<br><br />
+<input type="text" name="age" id="age" size="65" />
+<br><br />
+<input type="text" name="email" id="email" size="65" />
+<br><br />
+    <textarea rows="1" cols="48" name="typed" id="typed"></textarea>
+
+<br><br /><br />
+<input type="text" name="num" id="num" size="65" />
+<br><br /><br />
+  <textarea rows="6" cols="48" name="lwd" id="lwd" onkeyup="limitWords(this.id);"></textarea>
+ 
+
+<a href="javascript: empty();" onclick=""><img style="position:absolute; top:431px; left:65px" src="http://medulla.in/facebook/swastham/images/submit.png" width="86" height="31" /></a>
+
+</form>
+</div>
+</div>
+
+</body>
+</html>

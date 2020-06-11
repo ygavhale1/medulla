@@ -1,0 +1,32 @@
+form div{position:relative;} 
+
+/* setting the width and height of the SELECT element to match the replacing graphics */
+select.select{
+		position:relative;
+		z-index:10;
+		width:322px !important;
+		height:25px !important;
+		line-height:25px;
+}
+
+/* dynamically created SPAN, placed below the SELECT */
+span.select{
+	position:absolute;
+	bottom:0;
+	float:left;
+	left:0;
+	width:322px;
+	height:25px;
+	line-height:25px;
+	text-indent:10px;
+	background:url(../images/fieldbox_listing.png) no-repeat 0 0;
+	cursor:default;
+	z-index:1;
+	}
+	
+/* first variation (LABEL is above the SELECT) */	
+form div.variation1 label{display:block;line-height:26px;}
+
+/* second variation (LABEL is placed on the left of the SELECT) */	
+form div.variation2 label{float:left;width:100px;line-height:26px;}
+form div.variation2 span.select{left:100px;}

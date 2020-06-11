@@ -1,0 +1,20 @@
+.headerfixed { position:fixed; z-index:110; height:90px; width:100%;}
+.menuhead {margin:0 auto; width:910px;}
+.menuhead ul {margin:0; padding:0;}
+.menuhead ul li { float:left; padding:10px 65px 10px 65px; color:#6d6e71; font-size:14px; font-family:Roboto; text-transform:uppercase; line-height:66px;}
+.menuhead ul li a { color:#6d6e71; text-decoration:none; font-size:14px;}
+.menuhead ul li a:hover, .menuhead ul li a.active { color:#146197;}
+.menuhead ul li:nth-child(1) {background:url(../img/divline.png) no-repeat right center;}
+.menuhead ul li:nth-child(4) {background:url(../img/divline.png) no-repeat right center;}
+.menuhead ul li:nth-child(3) { padding:10px 0 10px 0; }
+
+
+.textbox { color:#2a2e67; font-size:14px; font-family:Roboto; line-height:20px; width:300px; text-align:left; padding-left:45px;}
+.textbox a {font-size:19px;color:#2a2e67; text-decoration:underline; display:block; padding-top:10px;}
+.textbox a:hover, .textbox a:focus {font-size:19px;color:#fff; text-decoration:underline;}
+.textbox span { font-size:19px; display:block; padding-bottom:5px;}
+
+.awardsbox { color:#2a2e67; font-size:14px; font-family:roboto; line-height:20px; width:300px; text-align:left; padding-left:45px;}
+.awardsbox a {font-size:19px;color:#2a2e67; text-decoration:underline; display:block; padding-top:10px;}
+.awardsbox a:hover, .textbox a:focus {font-size:19px;color:#fff; text-decoration:underline;}
+.awardsbox p{ padding-bottom:10px;}

@@ -1,0 +1,228 @@
+/* Reset CSS by Meyer*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* landing page css */
+body {
+	font-size:62.5%;
+	margin: 0;
+	padding: 0;
+}
+a {
+	outline:none;
+}
+.wrapper {
+	font-family:Arial, Helvetica, sans-serif;
+	width:810px;
+	height:825px;
+	margin:0;
+	background:url(../images/bg-main.jpg) no-repeat 0 0;
+	border:solid 1px #f2f2f2;
+	color:#666;
+}
+.header {
+	height:168px;
+	width:810px;
+	position:relative;
+}
+.logo {
+	float:left;
+	width:122px;
+	margin:23px 0px 0 39px;
+}
+ul.nav {
+	position:absolute;
+	top:85px;
+	left:142px;
+	width:450px;
+	padding-left:185px;
+	font-size:1em;
+	background:url(../images/nav-bg.png) no-repeat 0 0;
+}
+ul.nav li{
+	float:left;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:1.6em;
+	padding:14px 16px 14px 16px;
+	background:url(../images/nav-seprator.jpg) no-repeat right 18px;
+}
+ul.nav li.first { padding-left:0; }
+ul.nav li.last { padding-right:0; background:none; width:150px; }
+ul.nav li a {
+	text-decoration:none;
+	color:#17a2d8;
+}
+h1 {
+	font-size:2.0em;
+	color:#0079c1;
+	margin:0 0 8px 30px;
+}
+
+h2 {
+	color:#242424;
+	font-size:1.4em;
+	font-weight:bold;
+	margin:10px 0 8px 0;	
+}
+
+.content{
+	width:702px;
+	height:604px;
+	margin:0 0 0 33px;
+	color:#fff;
+	background:url(../images/content-bg.png) no-repeat 0 0;
+}
+.content p{
+	font-size:1.4em;
+	line-height:1.3em;
+	padding: 0 15px 14px 0;
+	color:#666666;
+	font-weight:normal;
+}
+.content p em{
+	font-style:italic;	
+}
+
+.content p a{color:#494949; text-decoration:underline;}
+.content p a:hover{color:#049ad6; text-decoration:none; }
+
+.content ul, .content ol {
+	font-size:1.4em;
+	line-height:1.2em;
+	color:#494949;
+	margin:0 20px 0 20px;	
+}
+
+ul.alpha{
+	list-style:lower-alpha;
+	margin:0 20px 0 24px;
+}
+.content ul li, .content ol li{
+	padding:0 0 5px 0;
+}
+
+.content ol li{
+	list-style:decimal;	
+	margin:0 0 0 24px;
+}
+.content p span {
+	width:65px;
+	display:inline-block;
+	font-weight:bold;	
+}
+.content p span.indent{
+	display:inherit;
+	font-weight:normal;
+	width:auto;
+	padding-left:70px;
+}
+
+.smallFonts{
+	font-size:80%;
+	padding:0 10px 0 20px;	
+}
+
+.clear {clear:both;}
+
+
+
+/*Footer*/
+.footer {
+	width:810px;
+	padding:5px 0;
+	border:solid 1px #cccccc;
+	background:#f1f1f1;
+	margin-top:10px;
+}
+.footer p {
+	padding:3px 10px;
+	color:#000;
+	font-size:1.2em;
+	line-height:1.2em;
+	font-family:Arial, Helvetica, sans-serif;
+}
+.footer p strong{font-weight:bold;}
+
+/* New Design */
+.title-head { 
+	position:absolute;
+	left:35px;	
+}
+.title-head.pp h1  {
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:1.8em;
+	color:#fff;
+	background:#f8c141;
+	padding:11px 0 11px 20px;
+	width:140px;
+}
+.title-head.tnc h1  {
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:1.8em;
+	color:#fff;
+	background:#f8c141;
+	padding:11px 0 11px 20px;
+	width:185px;
+}
+.title-head.ln h1  {
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:1.8em;
+	color:#fff;
+	background:#f8c141;
+	padding:11px 0 11px 20px;
+	width:125px;
+}
+.newtext2
+{
+	color:#000;
+	width:auto !important;
+}
+
+.content p span.newtext {
+	width:500px;
+	display:inline-block;
+	font-weight:bold;	
+}

@@ -1,0 +1,54 @@
+#wrapper{width:810px; height:auto; background:url(../images/top_bg.jpg) no-repeat 0 0; margin:0 auto;}
+#innerWrapper{width:810px; min-height:700px; padding-bottom:10px; background:url(../images/bottom_bg.jpg) no-repeat 0 bottom; }
+#header{width:auto; background:url(../images/hr_divider.png) no-repeat center bottom; height:43px; padding:20px;}
+#header h1{background:url(../images/logo.png) no-repeat right top; color:#fff; font:3.8em/43px Arial, Helvetica, sans-serif; padding:0 0 0 29px;}
+#header h1 strong{font-weight:bold;}
+#content{width:719px; margin:0 auto; padding:18px 0 55px; min-height:800px;}
+#realizeFaq{width:719px; display:block;}
+#realizeFaq dt{display:block; margin:0 0 2px 0;}
+#realizeFaq dt a{display:block; height:25px; text-decoration:none; font:bold 17px/25px Arial, Helvetica, sans-serif; color:#1a68a4; padding:6px 6px 6px 20px; background:url(../images/tabBg.png) repeat 0 0;}
+#realizeFaq dt a span{color:#1a68a4; display:block; height:25px; background:url(../images/accd_btn.png) no-repeat right 0;}
+/*#realizeFaq dt a:hover span,*/ #realizeFaq dt a.selected span{background-position:right -25px;}
+#realizeFaq dd{display:none	; background:url(../images/subBg.png) repeat 0 0; padding:10px; width:679px; margin:0 auto; position:relative;}
+/*#realizeFaq dd.first-child{display:block;}*/
+#realizeFaq dd .subFaq{display:block; width:100%; }
+#realizeFaq dd .subFaq li{display:block; margin:0 0 2px 0; position:relative;}
+#realizeFaq dd .subFaq li .faqCont{display:none;}
+/*#realizeFaq dd .subFaq li:first-child .faqCont{display:block;}*/
+#realizeFaq dd .subFaq li a{display:block; text-decoration:none; color:#272727; font:normal 16px/19px Arial, Helvetica, sans-serif; padding:7px 35px 6px 20px; background:url(../images/tabBg.png) repeat 0 0; position:relative;}
+#realizeFaq dd .subFaq li a span{color:#272727; height:19px; width:38px; position:absolute; margin:-9px 0; top:50%; right:5px; display:block;  background:url(../images/sub_accd_btn.png) no-repeat right 0; /*padding:0 10px 0 0;*/}
+/*#realizeFaq dd .subFaq li a:hover span,*/ #realizeFaq dd .subFaq li a.selected span/*, #realizeFaq dd .subFaq li:first-child a span*/{background-position:right -19px;}
+.faqCont{color:#fff; font:normal 14px/18px Arial, Helvetica, sans-serif; padding: 5px 0 5px 12px; width: 650px; margin:8px auto; height:150px; position:relative;}
+.faqCont h3{font-weight:bold; padding:0 0 5px 0; color:#fad606;}
+.faqCont table{margin-bottom:10px;}
+.faqCont p{padding:0 0 8px 0;}
+.faqCont p strong{font-size:15px; font-weight:bold; color:#fad606; }
+.faqCont p a{color:#fad606!important; font-size:14px!important; background:none!important; padding:0px!important; display:inline!important;}
+.faqCont p a:hover{text-decoration:underline!important;}
+.faqCont .body_fat_q_list{display:block; padding:0 0 0 25px;}
+.faqCont .body_fat_q_list li{display:list-item!important; list-style:decimal; padding:3px 0px;}
+.faqCont .body_fat_q_list li strong{font-size:15px; font-weight:bold;}
+.faqCont .ref{color:#fad606; font-size:11px; line-height:13px;}
+.faqCont .ref a{color:#fad606!important; font-size:11px!important; background:none!important; padding:0px!important; display:inline!important;}
+.faqCont .ref a:hover{text-decoration:underline!important;}
+
+.faqCont .weight-loss-list{display:block; padding:0 0 0 25px;}
+.faqCont .weight-loss-list li{display:list-item!important; list-style:square; padding:3px 0px;}
+.faqCont .weight-loss-list li strong{font-size:15px; font-weight:bold;}
+.faqCont .weight-loss-list li span{display:block; font-size:11px;}
+#footer{font:11px/13px Arial, Helvetica, sans-serif; color:#414141; background:url(../images/tabBg.png) repeat 0 0; padding:8px 10px; width:770px; margin:0 auto; }
+#footer p:first-child{padding:0 0 10px 0;}
+
+/* vertical scrollbar */
+.faqCont {clear: both; position:relative;}
+.faqCont .viewport {width:630px; padding:0 5px 0 0; height: 150px; overflow: hidden; position: relative; }
+.faqCont .overview { list-style: none; position: absolute; left: 0; top: 0; }
+
+.faqCont .thumb .end,
+.faqCont .thumb { background-color: #fad606; margin:3px; }
+.faqCont .scrollbar { position: relative; float: right; width: 13px; }
+.faqCont .track { background:url(../images/tabBg.png) repeat 0 0; height: 100%; width:13px; position: relative; padding: 0px 0 5px 0; }
+.faqCont .thumb { height: 20px; width: 8px; cursor: pointer; overflow: hidden; position: absolute; top: 0; }
+.faqCont .thumb .end { overflow: hidden; height: 5px; width: 8px; }
+.faqCont .disable{ display: none; }
+.noSelect { user-select: none; -o-user-select: none; -moz-user-select: none; -khtml-user-select: none; -webkit-user-select: none; }

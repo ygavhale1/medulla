@@ -1,0 +1,91 @@
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){	
+
+		if (!$.browser.opera) {
+    
+			// select element styling
+			$('select.select').each(function(){
+				var title = $(this).attr('title');
+				if( $('option:selected', this).val() != ''  ) title = $('option:selected',this).text();
+				$(this)
+					.css({'z-index':10,'opacity':0,'-khtml-appearance':'none'})
+					.after('<span class="select">' + title + '</span>')
+					.change(function(){
+						val = $('option:selected',this).text();
+						$(this).next().text(val);
+						})
+			});
+
+		};
+		
+	});
+</script>
+<link href="css/droplist_styles.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+	<h1>The alternative to custom styling of the SELECT elements</h1>
+    
+	<p>Check out the various examples of this trick.</p>
+
+    <form method="post" action="">  
+	
+    	<h2>Plain example</h2>
+        <div>
+            <select class="select" title="Select one">
+            	<option></option>
+                <option>Blue</option>
+                <option>Red</option>
+                <option>Green</option>
+                <option>Yellow</option>
+                <option>Brown</option>
+            </select>
+        </div>
+        
+        <h2>Plain example with one option selected by default</h2>
+        <div>
+            <select class="select" title="Select one">
+            	<option></option>
+                <option>Blue</option>
+                <option selected="selected">Red</option>
+                <option>Green</option>
+                <option>Yellow</option>
+                <option>Brown</option>
+            </select>
+        </div>
+        
+        <h2>Example with a label placed above</h2>
+        <div class="variation1">
+            <label>Choose a color</label>
+            <select class="select">
+                <option>Blue</option>
+                <option>Red</option>
+                <option>Green</option>
+                <option>Yellow</option>
+                <option>Brown</option>
+            </select>	
+        </div>
+        
+        <h2>Example with a label placed on the left</h2>
+        <div class="variation2">
+            <label>Choose a color</label>
+            <select class="select">
+                <option>Blue</option>
+                <option>Red</option>
+                <option>Green</option>
+                <option>Yellow</option>
+                <option>Brown</option>
+            </select>
+        </div>
+        
+    </form>
+
+
+<p><a href="http://cssglobe.com/post/8802/custom-styling-of-the-select-elements" title="read more about this trick">back to the article</a></p>
+
+<p>This trick is brought to you by <a href="http://cssglobe.com" title="web standards magazine and css news">Css Globe</a>, <a href="http://easyframework.com">Easy front-end framework</a> and supported by <a href="http://templatica.com">Css Templates</a> by Templatica</p>
+
+
+</body>
+</html>
